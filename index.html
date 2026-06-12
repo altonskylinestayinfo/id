@@ -17,11 +17,11 @@
                         // Warna Brand Baru
                         biruUtama: '#0D1B2A',   // Biru Gelap / Hitam Kebiruan (Dominan)
                         oranyeAksi: '#D4AF37',   // Emas / Kuning Keemasan (Aksi & Penekanan)
-                        merahAlton: '#CBB89A',   // Cokelat Muda / Krem Gelap
+                        cokelatMuda: '#CBB89A',  // Cokelat Muda / Krem Gelap
+                        abuTerang: '#E6E6E6',    // Abu Muda / Latar Terang (Disesuaikan kode asli)
                         emas: '#D4AF37',         // Emas (Sama dengan oranyeAksi)
                         gelap: '#0D1B2A',        // Warna Gelap Utama
-                        abuTeks: '#666666',      // Tetap sama, teks sekunder
-                        abuMuda: '#E6E666',      // Abu Kuning / Latar Terang
+                        abuTeks: '#666666',      // Teks sekunder
                         waHijau: '#25D366',      // Tetap sama untuk WhatsApp
                         putihKrem: '#F7F5EF'     // Putih Krem (Latar & Teks Terang)
                     },
@@ -41,7 +41,7 @@
                 box-shadow: 0 10px 40px rgba(13, 27, 42, 0.12);
             }
             .input-style {
-                @apply w-full px-4 py-3 border border-abuMuda/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-biruUtama/20 focus:border-biruUtama transition-all;
+                @apply w-full px-4 py-3 border border-abuTerang/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-biruUtama/20 focus:border-biruUtama transition-all;
             }
             .scroll-smooth {
                 scroll-behavior: smooth;
@@ -67,21 +67,21 @@
 </head>
 <body class="font-sans text-gelap bg-putihKrem overflow-x-hidden scroll-smooth">
 
-    <!-- Navigasi dengan Logo -->
-    <nav class="fixed w-full bg-putihKrem/95 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+    <!-- Navigasi dengan Logo - WARNA DIUBAH JADI BIRU GELAP -->
+    <nav class="fixed w-full bg-biruUtama/95 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
         <div class="container mx-auto px-4 py-2 flex justify-between items-center">
             <a href="#" class="flex items-center gap-3">
                 <img src="logo.png" alt="Alton Skyline Stay" class="h-12 md:h-14">
             </a>
             <div class="hidden md:flex gap-8">
-                <a href="#beranda" class="font-medium hover:text-oranyeAksi transition-colors">Beranda</a>
-                <a href="#galeri" class="font-medium hover:text-oranyeAksi transition-colors">Galeri</a>
-                <a href="#keunggulan" class="font-medium hover:text-oranyeAksi transition-colors">Keunggulan</a>
-                <a href="#harga" class="font-medium hover:text-oranyeAksi transition-colors">Harga</a>
-                <a href="#lokasi" class="font-medium hover:text-oranyeAksi transition-colors">Lokasi</a>
-                <a href="#pesan" class="font-medium hover:text-oranyeAksi transition-colors">Pesan Sekarang</a>
+                <a href="#beranda" class="font-medium text-putihKrem hover:text-oranyeAksi transition-colors">Beranda</a>
+                <a href="#galeri" class="font-medium text-putihKrem hover:text-oranyeAksi transition-colors">Galeri</a>
+                <a href="#keunggulan" class="font-medium text-putihKrem hover:text-oranyeAksi transition-colors">Keunggulan</a>
+                <a href="#harga" class="font-medium text-putihKrem hover:text-oranyeAksi transition-colors">Harga</a>
+                <a href="#lokasi" class="font-medium text-putihKrem hover:text-oranyeAksi transition-colors">Lokasi</a>
+                <a href="#pesan" class="font-medium text-putihKrem hover:text-oranyeAksi transition-colors">Pesan Sekarang</a>
             </div>
-            <button class="md:hidden text-gelap text-xl">
+            <button class="md:hidden text-putihKrem text-xl">
                 <i class="fa fa-bars"></i>
             </button>
         </div>
@@ -275,7 +275,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <!-- Paket WeekDay / Hemat -->
                 <div class="bg-putihKrem rounded-2xl bayangan overflow-hidden transform hover:-translate-y-2 transition-all border border-cokelatMuda/20">
-                    <div class="p-6 text-center border-b border-abuMuda/30">
+                    <div class="p-6 text-center border-b border-abuTerang/30">
                         <h3 class="text-xl font-bold mb-1">Paket WeekDay</h3>
                         <div class="text-3xl font-bold text-biruUtama mb-2">
                             Rp 249.000<span class="text-sm text-abuTeks font-normal">/malam</span>
@@ -343,7 +343,7 @@
                     <div class="bg-oranyeAksi text-white text-center py-1 text-sm font-semibold">
                         PALING DIPILIH
                     </div>
-                    <div class="p-6 text-center border-b border-abuMuda/30">
+                    <div class="p-6 text-center border-b border-abuTerang/30">
                         <h3 class="text-xl font-bold mb-1">Paket WeekEnd</h3>
                         <div class="text-3xl font-bold text-oranyeAksi mb-2">
                             Rp 299.000<span class="text-sm text-abuTeks font-normal">/malam</span>
@@ -407,7 +407,7 @@
 
                 <!-- Paket Event -->
                 <div class="bg-putihKrem rounded-2xl bayangan overflow-hidden transform hover:-translate-y-2 transition-all border border-cokelatMuda/20">
-                    <div class="p-6 text-center border-b border-abuMuda/30">
+                    <div class="p-6 text-center border-b border-abuTerang/30">
                         <h3 class="text-xl font-bold mb-1">Paket Event</h3>
                         <div class="text-3xl font-bold text-biruUtama mb-2">
                             Harga Special<span class="text-sm text-abuTeks font-normal">/malam</span>
@@ -473,7 +473,7 @@
     </section>
 
     <!-- Bagian Lokasi & Google Maps -->
-    <section id="lokasi" class="py-20 bg-abuMuda/20">
+    <section id="lokasi" class="py-20 bg-abuTerang/20">
         <div class="container mx-auto px-4">
             <div class="text-center mb-14">
                 <h2 class="text-[clamp(1.6rem,3vw,2.5rem)] font-bold text-gelap mb-2">Lokasi Kami</h2>
@@ -612,8 +612,8 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gelap text-gray-400 py-8 text-center text-sm">
+    <!-- Footer - WARNA SUDAH SAMA DENGAN HEADER -->
+    <footer class="bg-biruUtama text-gray-400 py-8 text-center text-sm">
         <div class="container mx-auto px-4">
             <img src="logo.png" alt="Alton Skyline Stay" class="h-10 mx-auto mb-3 opacity-80">
             <p>© 2026 Alton Skyline Stay - Penginapan Terbaik di Semarang</p>
