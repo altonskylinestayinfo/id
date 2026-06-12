@@ -14,14 +14,16 @@
             theme: {
                 extend: {
                     colors: {
-                        biruUtama: '#0052CC',
-                        oranyeAksi: '#FF6A00',
-                        merahAlton: '#D62828',
-                        emas: '#D4AF37',
-                        gelap: '#1A1A1A',
-                        abuTeks: '#666666',
-                        abuMuda: '#F5F7FA',
-                        waHijau: '#25D366'
+                        // Warna Brand Baru
+                        biruUtama: '#0D1B2A',   // Biru Gelap / Hitam Kebiruan (Dominan)
+                        oranyeAksi: '#D4AF37',   // Emas / Kuning Keemasan (Aksi & Penekanan)
+                        merahAlton: '#CBB89A',   // Cokelat Muda / Krem Gelap
+                        emas: '#D4AF37',         // Emas (Sama dengan oranyeAksi)
+                        gelap: '#0D1B2A',        // Warna Gelap Utama
+                        abuTeks: '#666666',      // Tetap sama, teks sekunder
+                        abuMuda: '#E6E666',      // Abu Kuning / Latar Terang
+                        waHijau: '#25D366',      // Tetap sama untuk WhatsApp
+                        putihKrem: '#F7F5EF'     // Putih Krem (Latar & Teks Terang)
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -33,13 +35,13 @@
     <style type="text/tailwindcss">
         @layer utilities {
             .teks-bayangan {
-                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+                text-shadow: 0 2px 4px rgba(13, 27, 42, 0.3);
             }
             .bayangan {
-                box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+                box-shadow: 0 10px 40px rgba(13, 27, 42, 0.12);
             }
             .input-style {
-                @apply w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-biruUtama/20 focus:border-biruUtama transition-all;
+                @apply w-full px-4 py-3 border border-abuMuda/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-biruUtama/20 focus:border-biruUtama transition-all;
             }
             .scroll-smooth {
                 scroll-behavior: smooth;
@@ -63,21 +65,21 @@
         }
     </style>
 </head>
-<body class="font-sans text-gelap bg-gray-50 overflow-x-hidden scroll-smooth">
+<body class="font-sans text-gelap bg-putihKrem overflow-x-hidden scroll-smooth">
 
     <!-- Navigasi dengan Logo -->
-    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+    <nav class="fixed w-full bg-putihKrem/95 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
         <div class="container mx-auto px-4 py-2 flex justify-between items-center">
             <a href="#" class="flex items-center gap-3">
                 <img src="logo.png" alt="Alton Skyline Stay" class="h-12 md:h-14">
             </a>
             <div class="hidden md:flex gap-8">
-                <a href="#beranda" class="font-medium hover:text-biruUtama transition-colors">Beranda</a>
-                <a href="#galeri" class="font-medium hover:text-biruUtama transition-colors">Galeri</a>
-                <a href="#keunggulan" class="font-medium hover:text-biruUtama transition-colors">Keunggulan</a>
-                <a href="#harga" class="font-medium hover:text-biruUtama transition-colors">Harga</a>
-                <a href="#lokasi" class="font-medium hover:text-biruUtama transition-colors">Lokasi</a>
-                <a href="#pesan" class="font-medium hover:text-biruUtama transition-colors">Pesan Sekarang</a>
+                <a href="#beranda" class="font-medium hover:text-oranyeAksi transition-colors">Beranda</a>
+                <a href="#galeri" class="font-medium hover:text-oranyeAksi transition-colors">Galeri</a>
+                <a href="#keunggulan" class="font-medium hover:text-oranyeAksi transition-colors">Keunggulan</a>
+                <a href="#harga" class="font-medium hover:text-oranyeAksi transition-colors">Harga</a>
+                <a href="#lokasi" class="font-medium hover:text-oranyeAksi transition-colors">Lokasi</a>
+                <a href="#pesan" class="font-medium hover:text-oranyeAksi transition-colors">Pesan Sekarang</a>
             </div>
             <button class="md:hidden text-gelap text-xl">
                 <i class="fa fa-bars"></i>
@@ -125,25 +127,25 @@
     </section>
 
     <!-- Baris Keunggulan Singkat -->
-    <section class="bg-merahAlton text-white py-6">
+    <section class="bg-biruUtama text-white py-6">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
             <div class="flex items-center justify-center gap-2">
-                <i class="fa fa-check-circle text-xl"></i>
+                <i class="fa fa-check-circle text-xl text-emas"></i>
                 <span>Gedung Ikonik & Modern</span>
             </div>
             <div class="flex items-center justify-center gap-2">
-                <i class="fa fa-check-circle text-xl"></i>
+                <i class="fa fa-check-circle text-xl text-emas"></i>
                 <span>Wi-Fi Cepat Gratis</span>
             </div>
             <div class="flex items-center justify-center gap-2">
-                <i class="fa fa-check-circle text-xl"></i>
+                <i class="fa fa-check-circle text-xl text-emas"></i>
                 <span>Pemandangan Siang & Malam</span>
             </div>
         </div>
     </section>
 
     <!-- Bagian Galeri - SLIDER GESER KANAN KIRI -->
-    <section id="galeri" class="py-20 bg-white">
+    <section id="galeri" class="py-20 bg-putihKrem">
         <div class="container mx-auto px-4">
             <div class="text-center mb-14">
                 <h2 class="text-[clamp(1.6rem,3vw,2.5rem)] font-bold text-gelap mb-3">Galeri Alton Skyline Stay</h2>
@@ -156,101 +158,101 @@
                     <!-- Foto 1: Gedung -->
                     <div class="swiper-slide">
                         <img src="gedung2.jpg" alt="Tampak Depan Gedung Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Tampilan gedung dengan desain arsitektur unik dan modern</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Tampilan gedung dengan desain arsitektur unik dan modern</p>
                     </div>
                     <!-- Foto 2: Pemandangan Malam -->
                     <div class="swiper-slide">
                         <img src="malam1.jpg" alt="Pemandangan Malam Hari" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Pemandangan indah kota Semarang di malam hari</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Pemandangan indah kota Semarang di malam hari</p>
                     </div>
                     <!-- Foto 3: Kamar Tidur Lama -->
                     <div class="swiper-slide">
                         <img src="bed9.jpeg" alt="Kamar Tidur Nyaman" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Kamar tidur luas, nyaman, dan berdesain mewah</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur luas, nyaman, dan berdesain mewah</p>
                     </div>
                     <!-- Foto 4: Jendela & Pemandangan -->
                     <div class="swiper-slide">
                         <img src="jendela.jpeg" alt="Sudut Kerja & Pemandangan" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Sudut ruang kerja dengan pemandangan langsung ke kota</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Sudut ruang kerja dengan pemandangan langsung ke kota</p>
                     </div>
                     <!-- Foto 5: Kolam Renang -->
                     <div class="swiper-slide">
                         <img src="kolamrenang1.jpeg" alt="Fasilitas Kolam Renang" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Fasilitas kolam renang umum yang bersih dan luas</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Fasilitas kolam renang umum yang bersih dan luas</p>
                     </div>
                     <!-- Foto 6: Lobby -->
                     <div class="swiper-slide">
                         <img src="lobby.jpeg" alt="Lobby Tower 1" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Lobby utama Tower 1 yang mudah diakses</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Lobby utama Tower 1 yang mudah diakses</p>
                     </div>
                     <!-- Foto 7: Kamar Mandi -->
                     <div class="swiper-slide">
                         <img src="toilet4.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
                     </div>
                     
                     <!-- FOTO KAMAR TAMBAHAN SEBELUMNYA -->
                     <div class="swiper-slide">
                         <img src="bed8.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Kamar tidur dengan desain modern dan nyaman</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur dengan desain modern dan nyaman</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="bed.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Kamar tidur luas dengan pencahayaan alami</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur luas dengan pencahayaan alami</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="bed2.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Kamar tidur elegan dengan fasilitas lengkap</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur elegan dengan fasilitas lengkap</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="bed3.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Kamar tidur dengan pemandangan kota</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur dengan pemandangan kota</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="bed4.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Kamar tidur mewah dan nyaman</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur mewah dan nyaman</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="bed5.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Kamar tidur dengan desain minimalis modern</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur dengan desain minimalis modern</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="bed6.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Kamar tidur lengkap dengan perabotan berkualitas</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur lengkap dengan perabotan berkualitas</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="bed7.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Kamar tidur bersih dan rapi</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur bersih dan rapi</p>
                     </div>
 
                     <!-- FOTO BARU YANG DITAMBAHKAN SEKARANG -->
                     <div class="swiper-slide">
                         <img src="malam4.jpeg" alt="Pemandangan Malam Hari Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Pemandangan malam kota Semarang yang memukau</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Pemandangan malam kota Semarang yang memukau</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="minimarket.jpeg" alt="Fasilitas Minimarket Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Minimarket lengkap di dalam gedung, buka setiap hari</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Minimarket lengkap di dalam gedung, buka setiap hari</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="parkir.jpeg" alt="Area Parkir Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Area parkir luas dan aman dengan keamanan 24 jam</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Area parkir luas dan aman dengan keamanan 24 jam</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="resepsionis.jpeg" alt="Layanan Resepsionis Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Layanan resepsionis ramah dan siap membantu 24 jam</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Layanan resepsionis ramah dan siap membantu 24 jam</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="akses.jpeg" alt="Akses Lokasi Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Akses sangat mudah, hanya 400 meter dari Gerbang Tol Banyumanik</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Akses sangat mudah, hanya 400 meter dari Gerbang Tol Banyumanik</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="balkon.jpeg" alt="Pemandangan dari Balkon Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Pemandangan indah matahari terbenam dari balkon kamar</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Pemandangan indah matahari terbenam dari balkon kamar</p>
                     </div>
                     <div class="swiper-slide">
                         <img src="malam3.jpeg" alt="Pemandangan Kawasan Undip Malam Hari" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-gray-600 italic mt-3">*Pemandangan kawasan kampus Undip dan Muladi Dome di malam hari</p>
+                        <p class="text-center text-abuTeks italic mt-3">*Pemandangan kawasan kampus Undip dan Muladi Dome di malam hari</p>
                     </div>
                     
                 </div>
@@ -263,7 +265,7 @@
     </section>
 
     <!-- Bagian Harga / Paket -->
-    <section id="harga" class="py-20 bg-white">
+    <section id="harga" class="py-20 bg-putihKrem">
         <div class="container mx-auto px-4">
             <div class="text-center mb-14">
                 <h2 class="text-[clamp(1.6rem,3vw,2.5rem)] font-bold text-gelap mb-2">Pilih Paket Menginap Anda</h2>
@@ -272,8 +274,8 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <!-- Paket WeekDay / Hemat -->
-                <div class="bg-white rounded-2xl bayangan overflow-hidden transform hover:-translate-y-2 transition-all">
-                    <div class="p-6 text-center border-b border-gray-100">
+                <div class="bg-putihKrem rounded-2xl bayangan overflow-hidden transform hover:-translate-y-2 transition-all border border-cokelatMuda/20">
+                    <div class="p-6 text-center border-b border-abuMuda/30">
                         <h3 class="text-xl font-bold mb-1">Paket WeekDay</h3>
                         <div class="text-3xl font-bold text-biruUtama mb-2">
                             Rp 249.000<span class="text-sm text-abuTeks font-normal">/malam</span>
@@ -282,51 +284,51 @@
                     </div>
                     <div class="p-6 space-y-3">
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Kamar Deluxe Luas</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Sky Terrace Koridor View</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Smart TV + Netflix</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>WiFi Gratis</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Dapur & Peralatan Masak</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Kulkas</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Setrika</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Hair dryer</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Teko listrik / Dispenser</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Perlengkapan Mandi</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Kolam Renang</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>GYM Umum</span>
                         </div>
                         
@@ -337,11 +339,11 @@
                 </div>
 
                 <!-- Paket Populer -->
-                <div class="bg-white rounded-2xl bayangan overflow-hidden transform scale-105 shadow-xl relative z-10 border-2 border-oranyeAksi">
+                <div class="bg-putihKrem rounded-2xl bayangan overflow-hidden transform scale-105 shadow-xl relative z-10 border-2 border-oranyeAksi">
                     <div class="bg-oranyeAksi text-white text-center py-1 text-sm font-semibold">
                         PALING DIPILIH
                     </div>
-                    <div class="p-6 text-center border-b border-gray-100">
+                    <div class="p-6 text-center border-b border-abuMuda/30">
                         <h3 class="text-xl font-bold mb-1">Paket WeekEnd</h3>
                         <div class="text-3xl font-bold text-oranyeAksi mb-2">
                             Rp 299.000<span class="text-sm text-abuTeks font-normal">/malam</span>
@@ -350,51 +352,51 @@
                     </div>
                     <div class="p-6 space-y-3">
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Kamar Deluxe Luas</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Sky Terrace Koridor View</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Smart TV + Netflix</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>WiFi Gratis</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Dapur & Peralatan Masak</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Kulkas</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Setrika</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Hair dryer</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Teko listrik / Dispenser</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Perlengkapan Mandi</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Kolam Renang</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>GYM Umum</span>
                         </div>
                         <a href="#pesan" class="block w-full text-center mt-4 py-2 bg-oranyeAksi hover:bg-oranyeAksi/90 text-white rounded-lg font-semibold transition-colors">
@@ -404,8 +406,8 @@
                 </div>
 
                 <!-- Paket Event -->
-                <div class="bg-white rounded-2xl bayangan overflow-hidden transform hover:-translate-y-2 transition-all">
-                    <div class="p-6 text-center border-b border-gray-100">
+                <div class="bg-putihKrem rounded-2xl bayangan overflow-hidden transform hover:-translate-y-2 transition-all border border-cokelatMuda/20">
+                    <div class="p-6 text-center border-b border-abuMuda/30">
                         <h3 class="text-xl font-bold mb-1">Paket Event</h3>
                         <div class="text-3xl font-bold text-biruUtama mb-2">
                             Harga Special<span class="text-sm text-abuTeks font-normal">/malam</span>
@@ -414,51 +416,51 @@
                     </div>
                     <div class="p-6 space-y-3">
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Kamar Deluxe Luas</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Sky Terrace Koridor View</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Smart TV + Netflix</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>WiFi Gratis</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Dapur & Peralatan Masak</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Kulkas</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Setrika</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Hair dryer</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Teko listrik / Dispenser</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Perlengkapan Mandi</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>Kolam Renang</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa fa-check text-green-500"></i>
+                            <i class="fa fa-check text-oranyeAksi"></i>
                             <span>GYM Umum</span>
                         </div>
                         <a href="#pesan" class="block w-full text-center mt-4 py-2 border-2 border-biruUtama text-biruUtama hover:bg-biruUtama/5 rounded-lg font-semibold transition-colors">
@@ -471,33 +473,33 @@
     </section>
 
     <!-- Bagian Lokasi & Google Maps -->
-    <section id="lokasi" class="py-20 bg-abuMuda">
+    <section id="lokasi" class="py-20 bg-abuMuda/20">
         <div class="container mx-auto px-4">
             <div class="text-center mb-14">
                 <h2 class="text-[clamp(1.6rem,3vw,2.5rem)] font-bold text-gelap mb-2">Lokasi Kami</h2>
                 <p class="text-abuTeks">Lokasi strategis di kawasan Banyumanik, Semarang</p>
             </div>
 
-            <div class="max-w-5xl mx-auto bg-white rounded-2xl bayangan overflow-hidden">
+            <div class="max-w-5xl mx-auto bg-putihKrem rounded-2xl bayangan overflow-hidden">
                 <div class="grid md:grid-cols-3">
                     <!-- Info Alamat -->
                     <div class="md:col-span-1 bg-biruUtama text-white p-6 flex flex-col justify-center">
-                        <h3 class="text-xl font-bold mb-4">Alton Skyline Stay</h3>
+                        <h3 class="text-xl font-bold mb-4 text-emas">Alton Skyline Stay</h3>
                         <p class="mb-4 text-white/90">
                             Jl. Prof. Soedarto No.10, Pedalangan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50268<br>
                             Indonesia
                         </p>
                         <div class="space-y-3 text-sm">
                             <div class="flex items-center gap-2">
-                                <i class="fa fa-map-pin"></i>
+                                <i class="fa fa-map-pin text-emas"></i>
                                 <span>Koordinat: -7.0543529, 110.4312717</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <i class="fa fa-clock-o"></i>
+                                <i class="fa fa-clock-o text-emas"></i>
                                 <span>Buka 24 Jam</span>
                             </div>
                         </div>
-                        <a href="https://www.google.com/maps/place/Alton+Skyline+Stay+%7C+Apartemen+Harian+Semarang/@-7.0543529,110.4312717,17z/data=!3m1!4b1!4m9!3m8!1s0x2e708f7eed2e58ab:0x35f74f0c35eb2b9c!5m2!4m1!1i2!8m2!3d-7.0543529!4d110.4312717!16s%2Fg%2F11njvd91lc!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="mt-6 inline-block bg-white text-biruUtama px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-all">
+                        <a href="https://www.google.com/maps/place/Alton+Skyline+Stay+%7C+Apartemen+Harian+Semarang/@-7.0543529,110.4312717,17z/data=!3m1!4b1!4m9!3m8!1s0x2e708f7eed2e58ab:0x35f74f0c35eb2b9c!5m2!4m1!1i2!8m2!3d-7.0543529!4d110.4312717!16s%2Fg%2F11njvd91lc!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="mt-6 inline-block bg-emas text-biruUtama px-4 py-2 rounded-lg font-semibold hover:bg-emas/90 transition-all">
                             Buka di Google Maps
                         </a>
                     </div>
@@ -520,18 +522,18 @@
     </section>
 
     <!-- Bagian Formulir Pemesanan (Sesuai Desain Gambar) -->
-    <section id="pesan" class="py-20 bg-white">
+    <section id="pesan" class="py-20 bg-putihKrem">
         <div class="container mx-auto px-4">
             <div class="text-center mb-14">
                 <h2 class="text-[clamp(1.6rem,3vw,2.5rem)] font-bold text-gelap mb-2">Formulir Pemesanan</h2>
                 <p class="text-abuTeks">Isi data di bawah ini, kami akan segera menghubungi Anda kembali</p>
             </div>
 
-            <div class="w-full max-w-4xl mx-auto bg-white rounded-2xl bayangan overflow-hidden grid md:grid-cols-2">
+            <div class="w-full max-w-4xl mx-auto bg-putihKrem rounded-2xl bayangan overflow-hidden grid md:grid-cols-2">
                 
-                <!-- Bagian Kiri (Biru) -->
+                <!-- Bagian Kiri (Biru Utama) -->
                 <div class="bg-biruUtama text-white p-8 flex flex-col justify-center">
-                    <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-4">
+                    <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-4 text-emas">
                         Pesan Sekarang,<br>Dapatkan Harga Terbaik!
                     </h2>
                     <p class="text-white/90 mb-8 text-sm leading-relaxed">
@@ -540,23 +542,23 @@
                     
                     <div class="space-y-3 text-sm">
                         <div class="flex items-center gap-3">
-                            <i class="fa fa-phone text-lg"></i>
+                            <i class="fa fa-phone text-lg text-emas"></i>
                             <span>6289-7666-0674</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <i class="fa fa-envelope text-lg"></i>
+                            <i class="fa fa-envelope text-lg text-emas"></i>
                             <span>altonskylinestay@gmail.com</span>
                         </div>
                         <!-- Teks Informasi WA di bawah email -->
-                        <div class="mt-4 p-3 bg-white/20 rounded-lg backdrop-blur-sm">
-                            <i class="fa fa-whatsapp mr-2"></i>
+                        <div class="mt-4 p-3 bg-emas/20 rounded-lg backdrop-blur-sm">
+                            <i class="fa fa-whatsapp mr-2 text-emas"></i>
                             <span class="font-semibold">Butuh bantuan cepat? Klik ikon WhatsApp di pojok kanan bawah untuk langsung menghubungi kami!</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Bagian Kanan (Formulir) -->
-                <div class="p-8 bg-white">
+                <div class="p-8 bg-putihKrem">
                     <form id="formPemesanan" class="space-y-4">
                         <div class="grid md:grid-cols-2 gap-4">
                             <div>
@@ -603,15 +605,15 @@
     </section>
 
     <!-- Bagian Penutup / Jaminan -->
-    <section class="bg-gelap text-white py-12 text-center">
+    <section class="bg-biruUtama text-white py-12 text-center">
         <div class="container mx-auto px-4">
-            <h3 class="text-xl font-bold mb-3">✅ Jaminan Kepuasan & Harga Terbaik</h3>
+            <h3 class="text-xl font-bold mb-3 text-emas">✅ Jaminan Kepuasan & Harga Terbaik</h3>
             <p class="text-gray-300 max-w-2xl mx-auto">Jika Anda menemukan harga lebih murah di tempat lain, kami berikan harga yang sama ditambah diskon tambahan 5%. Kami pastikan kenyamanan Anda adalah prioritas utama kami.</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#111] text-gray-400 py-8 text-center text-sm">
+    <footer class="bg-gelap text-gray-400 py-8 text-center text-sm">
         <div class="container mx-auto px-4">
             <img src="logo.png" alt="Alton Skyline Stay" class="h-10 mx-auto mb-3 opacity-80">
             <p>© 2026 Alton Skyline Stay - Penginapan Terbaik di Semarang</p>
