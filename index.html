@@ -148,122 +148,220 @@
         </div>
     </section>
 
-    <!-- Bagian Galeri - SLIDER GESER KANAN KIRI -->
+    <!-- Bagian Galeri - DIBAGI MENJADI 2 KOLOM -->
     <section id="galeri" class="py-20 bg-putihKrem">
         <div class="container mx-auto px-4">
             <div class="text-center mb-14">
                 <h2 class="text-[clamp(1.6rem,3vw,2.5rem)] font-bold text-gelap mb-3">Galeri Alton Skyline Stay</h2>
-                <p class="text-abuTeks max-w-xl mx-auto">Keindahan gedung, kenyamanan kamar, dan fasilitas lengkap yang kami sediakan untuk Anda.</p>
+                <p class="text-abuTeks max-w-xl mx-auto">Lihat kenyamanan kamar dan fasilitas lengkap yang kami sediakan untuk Anda.</p>
             </div>
 
-            <!-- Slider Galeri -->
-            <div class="swiper mySwiper max-w-5xl mx-auto">
-                <div class="swiper-wrapper">
-                    <!-- Foto 1: Gedung -->
-                    <div class="swiper-slide">
-                        <img src="gedung2.jpg" alt="Tampak Depan Gedung Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Tampilan gedung dengan desain arsitektur unik dan modern</p>
+            <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                
+                <!-- KOLOM KIRI: SLIDE FASILITAS -->
+                <div>
+                    <h3 class="text-xl font-semibold text-biruUtama mb-6 text-center">Fasilitas</h3>
+                    <div class="swiper swiperFasilitas bayangan rounded-xl overflow-hidden">
+                        <div class="swiper-wrapper">
+                            <!-- Gambar Fasilitas -->
+                            <div class="swiper-slide">
+                                <img src="gedung2.jpg" alt="Tampak Depan Gedung" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Tampilan gedung dengan desain arsitektur unik dan modern</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="malam1.jpg" alt="Pemandangan Malam Hari" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Pemandangan indah kota Semarang di malam hari</p>
+                            </div>
+                             <div class="swiper-slide">
+                                <img src="malam2.jpeg" alt="Pemandangan Kawasan Sekitar" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Pemandangan kawasan kampus Undip dan Muladi Dome di malam hari</p>
+                            </div>
+                             <div class="swiper-slide">
+                                <img src="malam3.jpeg" alt="Pemandangan Kawasan Sekitar" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Pemandangan kawasan kampus Undip dan Muladi Dome di malam hari</p>
+                            </div>
+                             <div class="swiper-slide">
+                                <img src="malam4.jpeg" alt="Pemandangan Kawasan Sekitar" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Pemandangan kawasan kampus Undip dan Muladi Dome di malam hari</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="malam5.jpeg" alt="Pemandangan Malam Hari" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Pemandangan indah kota Semarang di malam hari</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="kolamrenang1.jpeg" alt="Fasilitas Kolam Renang" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Fasilitas kolam renang umum yang bersih dan luas</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="kolamrenang2.jpeg" alt="Fasilitas Kolam Renang" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Fasilitas kolam renang umum yang bersih dan luas</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="kolamrenang3.jpeg" alt="Fasilitas Kolam Renang" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Fasilitas kolam renang umum yang bersih dan luas</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="kolamrenang4.jpeg" alt="Fasilitas Kolam Renang" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Fasilitas kolam renang umum yang bersih dan luas</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="lobby.jpeg" alt="Lobby Utama" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Lobby utama Tower 1 yang mudah diakses</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="cube.jpeg" alt="Pemandangan Malam Hari" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Pemandangan indah kota Semarang di malam hari</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="gym.jpeg" alt="Pemandangan Malam Hari" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Pemandangan indah kota Semarang di malam hari</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="gym2.jpeg" alt="Pemandangan Malam Hari" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Pemandangan indah kota Semarang di malam hari</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="minimarket.jpeg" alt="Minimarket di Dalam Gedung" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Minimarket lengkap di dalam gedung, buka setiap hari</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="balkon.jpeg" alt="Pemandangan dari Balkon" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Pemandangan indah matahari terbenam dari balkon kamar</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="parkir.jpeg" alt="Area Parkir" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Area parkir luas dan aman dengan keamanan 24 jam</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resepsionis.jpeg" alt="Layanan Resepsionis" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Layanan resepsionis ramah dan siap membantu 24 jam</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="akses.jpeg" alt="Akses Lokasi" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Akses sangat mudah, hanya 400 meter dari Gerbang Tol Banyumanik</p>
+                            </div>
+                        </div>
+                        <!-- Navigasi & Indikator -->
+                        <div class="swiper-pagination pt-2"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <!-- Foto 2: Pemandangan Malam -->
-                    <div class="swiper-slide">
-                        <img src="malam1.jpg" alt="Pemandangan Malam Hari" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Pemandangan indah kota Semarang di malam hari</p>
-                    </div>
-                    <!-- Foto 3: Kamar Tidur Lama -->
-                    <div class="swiper-slide">
-                        <img src="bed9.jpeg" alt="Kamar Tidur Nyaman" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur luas, nyaman, dan berdesain mewah</p>
-                    </div>
-                    <!-- Foto 4: Jendela & Pemandangan -->
-                    <div class="swiper-slide">
-                        <img src="jendela.jpeg" alt="Sudut Kerja & Pemandangan" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Sudut ruang kerja dengan pemandangan langsung ke kota</p>
-                    </div>
-                    <!-- Foto 5: Kolam Renang -->
-                    <div class="swiper-slide">
-                        <img src="kolamrenang1.jpeg" alt="Fasilitas Kolam Renang" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Fasilitas kolam renang umum yang bersih dan luas</p>
-                    </div>
-                    <!-- Foto 6: Lobby -->
-                    <div class="swiper-slide">
-                        <img src="lobby.jpeg" alt="Lobby Tower 1" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Lobby utama Tower 1 yang mudah diakses</p>
-                    </div>
-                    <!-- Foto 7: Kamar Mandi -->
-                    <div class="swiper-slide">
-                        <img src="toilet4.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
-                    </div>
-                    
-                    <!-- FOTO KAMAR TAMBAHAN SEBELUMNYA -->
-                    <div class="swiper-slide">
-                        <img src="bed8.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur dengan desain modern dan nyaman</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="bed.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur luas dengan pencahayaan alami</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="bed2.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur elegan dengan fasilitas lengkap</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="bed3.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur dengan pemandangan kota</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="bed4.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur mewah dan nyaman</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="bed5.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur dengan desain minimalis modern</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="bed6.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur lengkap dengan perabotan berkualitas</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="bed7.jpeg" alt="Kamar Tidur Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Kamar tidur bersih dan rapi</p>
-                    </div>
-
-                    <!-- FOTO BARU YANG DITAMBAHKAN SEKARANG -->
-                    <div class="swiper-slide">
-                        <img src="malam4.jpeg" alt="Pemandangan Malam Hari Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Pemandangan malam kota Semarang yang memukau</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="minimarket.jpeg" alt="Fasilitas Minimarket Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Minimarket lengkap di dalam gedung, buka setiap hari</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="parkir.jpeg" alt="Area Parkir Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Area parkir luas dan aman dengan keamanan 24 jam</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="resepsionis.jpeg" alt="Layanan Resepsionis Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Layanan resepsionis ramah dan siap membantu 24 jam</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="akses.jpeg" alt="Akses Lokasi Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Akses sangat mudah, hanya 400 meter dari Gerbang Tol Banyumanik</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="balkon.jpeg" alt="Pemandangan dari Balkon Alton Skyline Stay" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Pemandangan indah matahari terbenam dari balkon kamar</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="malam3.jpeg" alt="Pemandangan Kawasan Undip Malam Hari" class="w-full h-auto rounded-xl bayangan">
-                        <p class="text-center text-abuTeks italic mt-3">*Pemandangan kawasan kampus Undip dan Muladi Dome di malam hari</p>
-                    </div>
-                    
                 </div>
-                <!-- Tombol Navigasi -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+
+                <!-- KOLOM KANAN: SLIDE KAMAR -->
+                <div>
+                    <h3 class="text-xl font-semibold text-biruUtama mb-6 text-center">Kamar</h3>
+                    <div class="swiper swiperKamar bayangan rounded-xl overflow-hidden">
+                        <div class="swiper-wrapper">
+                            <!-- Gambar Kamar -->
+                            <div class="swiper-slide">
+                                <img src="bed.jpeg" alt="Kamar Tidur Nyaman" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur luas, nyaman, dan berdesain mewah</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="bed2.jpeg" alt="Kamar Tidur Modern" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur dengan desain modern dan nyaman</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="bed3.jpeg" alt="Kamar Tidur Luas" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur luas dengan pencahayaan alami</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="bed4.jpeg" alt="Kamar Tidur Elegan" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur elegan dengan fasilitas lengkap</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="bed5.jpeg" alt="Kamar dengan Pemandangan" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur dengan pemandangan kota</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="bed6.jpeg" alt="Kamar Tidur Mewah" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur mewah dan nyaman</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="bed7.jpeg" alt="Kamar Desain Minimalis" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur dengan desain minimalis modern</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="bed8.jpeg" alt="Perabotan Lengkap" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur lengkap dengan perabotan berkualitas</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="bed9.jpeg" alt="Kamar Bersih & Rapi" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur bersih dan rapi</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="bed10.jpeg" alt="Kamar Bersih & Rapi" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur bersih dan rapi</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="bed11.jpeg" alt="Kamar Bersih & Rapi" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar tidur bersih dan rapi</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="kulkas.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="tv.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="dapur1.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="dapur2.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="dapur3.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="hairdayer.jpeg" alt="Sudut Ruang Kerja" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Sudut ruang kerja dengan pemandangan langsung ke kota</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="teko.jpeg" alt="Sudut Ruang Kerja" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Sudut ruang kerja dengan pemandangan langsung ke kota</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="toilet1.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="toilet2.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="toilet3.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="toilet4.jpeg" alt="Kamar Mandi Bersih" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Kamar mandi bersih, lengkap, dan berstandar hotel</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="jendela1.jpeg" alt="Sudut Ruang Kerja" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Sudut ruang kerja dengan pemandangan langsung ke kota</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="jendela2.jpeg" alt="Sudut Ruang Kerja" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Sudut ruang kerja dengan pemandangan langsung ke kota</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="jendela3.jpeg" alt="Sudut Ruang Kerja" class="w-full h-auto">
+                                <p class="text-center text-abuTeks italic mt-3">*Sudut ruang kerja dengan pemandangan langsung ke kota</p>
+                            </div>
+                        </div>
+                        <!-- Navigasi & Indikator -->
+                        <div class="swiper-pagination pt-2"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -604,7 +702,7 @@
                                 <option value="">Pilih jenis kamar</option>
                                 <option value="Rate WeekDay - Rp 249.000">Rate WeekDay - Rp 249.000</option>
                                 <option value="Rate WeekEnd - Rp 299.000">Rate WeekEnd - Rp 299.000</option>
-                                <option value="Rate Weekly - Rp 350.000">Rate Weekly - Rp 1.799.000</option>
+                                <option value="Rate Weekly - Rp 1.799.000">Rate Weekly - Rp 1.799.000</option>
                             </select>
                         </div>
 
@@ -624,36 +722,36 @@
     <section class="bg-biruUtama text-white py-12 text-center">
         <div class="container mx-auto px-4">
             <h3 class="text-xl font-bold mb-3 text-emas">✅ Jaminan Kepuasan & Harga Terbaik</h3>
+            <p class="text-gray-300 max-w-2xl mx-auto">Kami berkomitmen memberikan pelayanan terbaik dan harga yang transparan tanpa biaya tersembunyi.</p>
         </div>
     </section>
-        <!-- Footer dengan Link Media Sosial Lengkap -->
-<footer class="bg-biruUtama text-gray-400 py-8 text-center text-sm">
-    <div class="container mx-auto px-4">
 
-        <!-- Logo -->
-        <img src="logo.png" alt="Alton Skyline Stay" class="h-10 mx-auto mb-3 opacity-80">
-        
-        <!-- Ikon Media Sosial dengan Link Sesuai -->
-        <div class="flex justify-center gap-4 mb-4">
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/share/1GQfDpHZgR/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-oranyeAksi transition-colors text-xl">
-                <i class="fa fa-facebook"></i>
-            </a>
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/alton_skylinestay?igsh=cXJ0ZGR0bHV0enpq" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-oranyeAksi transition-colors text-xl">
-                <i class="fa fa-instagram"></i>
-            </a>
-            <!-- TikTok -->
-            <a href="https://vm.tiktok.com/ZS969V9MdX5ej-3JQ5F/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-oranyeAksi transition-colors text-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="display: inline-block; vertical-align: middle;">
-                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
-                </svg>
-            </a>
+    <!-- Footer - SUDAH LENGKAP DENGAN LINK SOSMED -->
+    <footer class="bg-biruUtama text-gray-400 py-8 text-center text-sm">
+        <div class="container mx-auto px-4">
+            <img src="logo.png" alt="Alton Skyline Stay" class="h-10 mx-auto mb-3 opacity-80">
+            
+            <!-- Ikon Media Sosial dengan Link -->
+            <div class="flex justify-center gap-6 mb-4">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/1GQfDpHZgR/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-oranyeAksi transition-colors text-xl">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/alton_skylinestay?igsh=cXJ0ZGR0bHV0enpq" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-oranyeAksi transition-colors text-xl">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <!-- TikTok -->
+                <a href="https://vm.tiktok.com/ZS969V9MdX5ej-3JQ5F/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-oranyeAksi transition-colors text-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="display: inline-block; vertical-align: middle;">
+                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <p>© 2026 Alton Skyline Stay - Penginapan Terbaik di Semarang</p>
         </div>
-
-        <p>© 2026 Alton Skyline Stay - Penginapan Terbaik di Semarang</p>
-    </div>
-</footer>
+    </footer>
 
     <!-- SCRIPT PENGIRIMAN KE WHATSAPP -->
     <script>
@@ -687,18 +785,34 @@
         });
     </script>
 
-    <!-- SCRIPT SLIDER GALERI -->
+    <!-- SCRIPT SLIDER GALERI TERBARU -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        // Slider Fasilitas
+        var swiperFasilitas = new Swiper(".swiperFasilitas", {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 20,
             loop: true,
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".swiperFasilitas .swiper-button-next",
+                prevEl: ".swiperFasilitas .swiper-button-prev",
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: ".swiperFasilitas .swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // Slider Kamar
+        var swiperKamar = new Swiper(".swiperKamar", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: ".swiperKamar .swiper-button-next",
+                prevEl: ".swiperKamar .swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiperKamar .swiper-pagination",
                 clickable: true,
             },
         });
