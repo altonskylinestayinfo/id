@@ -1,0 +1,18 @@
+.swiper {
+    width: 100%;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.swiper-wrapper {
+    align-items: stretch;
+}
+
+.swiper-slide img{
+    width:100%;
+    display:block;
+    border-radius:12px;
+    pointer-events:none;
+    -webkit-user-drag:none;
+}
