@@ -831,40 +831,68 @@
 
     <!-- SCRIPT SLIDER GALERI TERBARU -->
     <script>
-        // Slider Fasilitas
-        var swiperFasilitas = new Swiper(".swiperFasilitas", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            grabCursor: true, // Menambahkan indikator geser & meningkatkan sensitivitas sentuhan
-            allowTouchMove: true, // Memastikan fitur geser/slide di HP aktif sepenuhnya
-            navigation: {
-                nextEl: ".swiperFasilitas .swiper-button-next",
-                prevEl: ".swiperFasilitas .swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiperFasilitas .swiper-pagination",
-                clickable: true,
-            },
-        });
+    // Slider Fasilitas
+    var swiperFasilitas = new Swiper(".swiperFasilitas", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
 
-        // Slider Kamar
-        var swiperKamar = new Swiper(".swiperKamar", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            grabCursor: true, // Menambahkan indikator geser & meningkatkan sensitivitas sentuhan
-            allowTouchMove: true, // Memastikan fitur geser/slide di HP aktif sepenuhnya
-            navigation: {
-                nextEl: ".swiperKamar .swiper-button-next",
-                prevEl: ".swiperKamar .swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiperKamar .swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
+        // Mobile Swipe
+        touchRatio: 1,
+        simulateTouch: true,
+        allowTouchMove: true,
+        grabCursor: true,
+        resistance: true,
+        resistanceRatio: 0.85,
+        threshold: 5,
+
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+
+        navigation: {
+            nextEl: ".swiperFasilitas .swiper-button-next",
+            prevEl: ".swiperFasilitas .swiper-button-prev",
+        },
+
+        pagination: {
+            el: ".swiperFasilitas .swiper-pagination",
+            clickable: true,
+        },
+    });
+
+    // Slider Kamar
+    var swiperKamar = new Swiper(".swiperKamar", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+
+        // Mobile Swipe
+        touchRatio: 1,
+        simulateTouch: true,
+        allowTouchMove: true,
+        grabCursor: true,
+        resistance: true,
+        resistanceRatio: 0.85,
+        threshold: 5,
+
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+
+        navigation: {
+            nextEl: ".swiperKamar .swiper-button-next",
+            prevEl: ".swiperKamar .swiper-button-prev",
+        },
+
+        pagination: {
+            el: ".swiperKamar .swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
 
 </body>
 </html>
